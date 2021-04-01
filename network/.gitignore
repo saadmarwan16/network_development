@@ -1,0 +1,27 @@
+media/
+venv/
+.env
+*.sqlite3
+
+# Main app
+__pycache__/
+
+# Accounts app
+backend/accounts/migrations/
+backend/accounts/__pycache__/
+
+# Bookmarks app
+backend/bookmarks/migrations/
+backend/bookmarks/__pycache__/
+
+# Comments app
+backend/comments/migrations/
+backend/comments/__pycache__/
+
+# Likes app
+backend/likes/migrations/
+backend/likes/__pycache__/
+
+# Posts app
+backend/posts/migrations/
+backend/posts/__pycache__/
