@@ -1,0 +1,124 @@
+.auth {
+    padding: 2em 0;
+
+    &__logo-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5em 1em;
+        margin-bottom: 1em;
+        text-decoration: none;
+        min-height: 8.5rem;
+
+        &__inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5em 1em;
+            border-radius: .5em;
+
+            &__logo {
+                max-width: 5rem;
+                margin-right: 1em;
+            }
+    
+            &__name {
+                color: $clr-light-light;
+            }
+    
+            &:hover {
+                border: 1px solid $clr-pink;
+            }
+        }
+    }
+
+    &__main {
+        width: 80%;
+        margin: 0 auto;
+
+        &__inner {
+            &__form {
+                padding: 1em 0;
+                background: $clr-dark-dark;
+                border-radius: .5em;
+
+                &__heading {
+                    text-align: center;
+                    padding: .5em 0 1em;
+                }
+
+                &__inner {
+                    text-align: center;
+                    padding: .5em;
+
+                    &__input {
+                        background: transparent;
+                        color: $clr-light-light;
+                        width: 80%;
+                        min-height: 2.5em;
+                        font-size: 1.6rem;
+                        border: none;
+                        border-bottom: 1px solid $clr-light-light;
+                        box-shadow: none;
+                        text-align: center;
+
+                        &::placeholder {
+                            color: $clr-light-light;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                &__meta, &__submit-btn {
+                    padding: .5em;
+                    width: 80%;
+                    margin: 0 auto;
+                    color: $clr-light-light
+                }
+
+                &__submit-btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 1em 0;
+                }
+
+                &__change {
+                    text-align: center;
+
+                    &__span {
+                        margin-right: .5em;
+                    }
+
+                    &__link {
+                        color: $clr-pink;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $clr-accent;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 576px) {
+            width: 60%;
+        }
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media (min-width: 992px) {
+            width: 40%;
+        }
+
+        @media (min-width: 1200px) {
+            width: 30%;
+        }
+    }
+}

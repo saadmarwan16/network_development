@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(1.7vh + 0.1vw);
+}
+
+body {
+    background: $clr-light-dark;
+    color: $clr-light-light;
+    font-family: $ff-body;
+    font-size: $fs-body;
+    line-height: 150%;
+}
+
+h1, h2, h3 {
+    line-height: 125%;
+}
+
+h2, h3 {
+    font-family: $ff-h2-h3;
+}
+
+
+h1 {
+    font-size: $fs-h1;
+    font-family: $ff-h1;
+}
+
+h2 {
+    font-size: $fs-h2;
+}
+
+h3 {
+    font-size: $fs-h3;
+}
+
+h4 {
+    font-size: $fs-h4;
+    font-family: $ff-h4;
+}
+
+small {
+    font-size: $fs-small;
+}
+
+img {
+    max-width: 100%;
+}
+
+.custom-btn {
+    background: $clr-blue;
+    color: $clr-light-light !important;
+    padding: .5em 1.75em;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50rem;
+    box-shadow: none;
+}
+
+.custom-btn:hover {
+    background: $clr-accent;
+}
+
+.custom-btn:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
